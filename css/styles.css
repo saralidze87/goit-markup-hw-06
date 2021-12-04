@@ -455,7 +455,8 @@ body {
   margin-left: 70px;
 }
 
-.join-main {
+.join-main,
+.email-text {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -465,6 +466,7 @@ body {
 
   margin-bottom: 20px;
 }
+
 .join-list {
   display: flex;
 }
@@ -492,6 +494,60 @@ body {
 .join-link:hover,
 .join-link:focus {
   background-color: var(--link-text-color);
+}
+.email {
+  margin-left: 93px;
+}
+
+.email-form-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.email-input {
+  width: 358px;
+  height: 50px;
+  font-weight: ;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+}
+.email-input::placeholder {
+  font-weight: ;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.email-button {
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  padding-left: 29px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--link-text-color);
+  color: var(--main-btn-color);
+}
+.email-btn-icon {
+  margin-left: 10px;
 }
 /*----------------------------PORTFOLIO-------------------*/
 .portfolio {
@@ -619,6 +675,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   transform: scale(1) rotate(0);
   transform: translate(-50%, -50%);
   transition: transform 1000ms;
@@ -636,8 +693,36 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: 0;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--second-title-color);
+}
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: var(--main-text-color);
+  font-weight: 600;
+}
+.modal-button {
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px auto;
 }
