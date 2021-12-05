@@ -70,7 +70,7 @@
     </section>
     <section class="features">  
         <div class="container features-container">
-            <h2 class="hidden-header">Особенности</h2>
+            <h2 class="visually-hidden">Особенности</h2>
             <ul class="list features-list">
                 <li class="item">
                     <div class="features-box">
@@ -403,24 +403,19 @@
         </div>
         <div class="email">
             <p class="email-text">Подпишитесь на рассылку</p>
-            <div class="email-form-item">           
-                <input 
-                    type="text" 
-                    class="email-input" 
-                    name="email-name" 
-                    placeholder="E-mail"
-                />           
-            <button class="email-button" type="submit">Подписаться
-                <svg class="email-btn-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-            </button>
+            <div class="email-form-item">
+                <label class="email-label-text" for="user-email">E-mail</label>
+                <input type="text" class="email-input" name="email-name" />
+                <button class="email-button" type="submit">Подписаться
+                    <svg class="email-btn-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
             </div>
-
         </div>
     </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="modal-close-icon" width="11" height="11">
@@ -489,12 +484,16 @@
                         name="policy"
                         id="policy"
                     />
-                    <svg class="check-icon" width="16" height="15">
-                        <use href="./images/icons.svg#icon-vector"></use>
-                    </svg>
-                    <p class="modal-check-text">Соглашаюсь с рассылкой и принимаю 
-                        <a class="modal-check-text-accent" href="">Условия договора</a>                  
-                    </p>
+                    <label for="policy" class="check-text">
+                        <span class="check-item">
+                            <svg class="check-icon" width="11" height="8">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        Соглашаюсь с рассылкой и принимаю
+                    <a class="modal-check-text-accent" href="">Условия договора</a></label>
+                    
+                    
                 </div>
                 <p class="btn-text">
                     <button type="submit" class="modal-button">Отправить</button>
