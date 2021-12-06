@@ -816,6 +816,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: absolute;
+  left: -24px;
+  top: 15%;
 }
 .check-icon {
   fill: var(--main-btn-color);
@@ -830,6 +834,8 @@ body {
 
   display: flex;
   align-items: center;
+
+  position: relative;
 }
 .modal-check-text-accent {
   margin-left: 4px;
