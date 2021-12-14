@@ -664,6 +664,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+
+/*--------------MODAL---------------*/
 .backdrop {
   width: 100vw;
   height: 100vh;
